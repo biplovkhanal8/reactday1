@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+    </header>
+    
+    <main>
+        <section class="card">
+            <h2>Active Users</h2>
+            <p>List of active users sorted by name.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="processed-users"></tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Recent Posts</h2>
+            <p><strong>Posts fetched from API for user ID 1.</strong></p>
+            <ul id="user-posts"></ul>
+        </section>
+
+        <section class="card">
+            <h2>User Profile</h2>
+            <div id="user-profile" class="profile-container"></div>
+        </section>
+
+        <section class="card">
+            <h2>Application State</h2>
+            <p>State changes logged in console.</p>
+            <div class="state-manager">
+                <div class="state-item">
+                    <strong>Initial State:</strong> <span id="initial-state">Loading...</span>
+                </div>
+                <div class="state-item">
+                    <strong>Current State:</strong> <span id="current-state">User Data Fetched</span>
+                </div>
+                <!-- Additional states -->
+                <div class="state-item">
+                    <strong>Current State:</strong> <span id="current-state-example-1">User Logged In</span>
+                </div>
+                <div class="state-item">
+                    <strong>Current State:</strong> <span id="current-state-example-2">Post Data Loaded</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 User Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
