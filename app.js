@@ -2,7 +2,7 @@ import { processUserData } from './processUserData.js';
 import { fetchUserPosts } from './fetchUserPosts.js';
 import { createUserProfileHTML } from './createUserProfileHTML.js';
 import { createStateManager } from './createStateManager.js';
-import { users, sampleUser } from './users.js';
+import { users, sampleUser } from './userProfile.js';
 
 // Display processed users
 const processedUsers = processUserData(users);
